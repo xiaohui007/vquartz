@@ -1,0 +1,150 @@
+.feature {
+  padding: 0 3.64583333%;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.feature .swiper-wrapper {
+  height: 840px;
+  top: 0!important;
+}
+.feature .swiper-slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s 0.5s;
+  -moz-transition: opacity 0.5s 0.5s;
+  -ms-transition: opacity 0.5s 0.5s;
+  -o-transition: opacity 0.5s 0.5s;
+  transition: opacity 0.5s 0.5s;
+}
+.feature .swiper-slide.swiper-slide-active {
+  z-index: 2;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.feature .pic {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.feature .btn-detail {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 136px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 16px;
+  margin: -9px 0 0 -68px;
+  border: 2px solid #fff;
+  text-align: center;
+  color: #fff;
+}
+.feature .btn-detail span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.feature .btn-detail i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  content: '.';
+  color: #fff;
+  z-index: 1;
+  background-color: #fff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  text-indent: -30000px;
+  overflow: hidden;
+}
+.feature .btn-detail:hover,
+.feature .btn-detail.active {
+  font-size: 16px;
+  color: #d4900a;
+}
+.feature .btn-detail:hover i,
+.feature .btn-detail.active i {
+  height: 100%;
+}
+.feature .swiper-pagination {
+  position: absolute;
+  right: 40px;
+  top: 40%;
+  z-index: 9;
+}
+.feature .swiper-pagination-switch {
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  opacity: 0.8;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.feature .swiper-pagination-switch:after {
+  content: '.';
+  text-indent: -30000px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 2px solid #fff;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.feature .swiper-pagination-switch.swiper-active-switch {
+  background-color: #e49f29;
+}
+.feature .swiper-pagination-switch.swiper-active-switch:after {
+  width: 200%;
+  height: 200%;
+}
+.feature .swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-bottom: 20px;
+  right: 60px;
+}
