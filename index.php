@@ -3,7 +3,7 @@
 include_once('common.php');
 
 if($_SGLOBAL['ismobile']){
-	//Obheader('wap/index.php');	
+	Obheader('wap/index.php');	
 }
 
 $imginfo = array();
